@@ -29,7 +29,7 @@ module.exports = {
     modules: {
         autoRequire: {
             // outputFileName : [ entryModule ]
-            'scripts/goquoting.js': ['initialize']
+            'public/scripts/goquoting.js': ['initialize']
         }
     },
     plugins: {

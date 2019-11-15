@@ -1,15 +1,15 @@
 <?php
 /**
- * @package GOQuoting
- * @version 1.0
+ * @package GOQuoting2020
+ * @version 2.0
  */
 /*
-Plugin Name: GOQuoting by Go Galapagos
-Plugin URI: https://gogalapagos.com
-Description: This plugin allows you to have a communication interface with Go Galapagos, in order to give your visitors the chance to quote a cruise for Galapagos Island with Go Galapagos Cruises
-Author: jmrPadrino & The Go Galapagos Team
+Plugin Name: GOQuoting2020 by Go Galapagos
+Plugin URI: https://www.gogalapagos.com
+Description: Updated quoting plugin allows you to have a communication interface with Go Galapagos, in order to give your visitors the chance to quote a cruise for Galapagos Island with Go Galapagos Cruises
+Author: @cattanich & The Go Galapagos Team
 Version: 1.0
-Author URI: https://choclomedia.com
+Author URI: www.digicatt.com.ec
 */
 
 /**
@@ -31,17 +31,17 @@ define('META_PREFIX', 'gg_');
 /**
  * Agregar archivos requeridos
  */ 
-require_once('admin/booking-system-setup.php');
-require_once('admin/booking-system-admin-functions.php');
-require_once('app/booking-system-create-pages.php');
-require_once('app/booking-system-shortcodes.php');
+require_once('admin/goquoting-setup.php');
+require_once('admin/admin-functions.php');
+require_once('public/booking-system-create-pages.php');
+require_once('public/booking-system-shortcodes.php');
 // require_once('app/booking-system-frontend.php');
 
 
 // CcM Edit / carga de js 
 function goquotingjs_init() {
 
-wp_enqueue_script ( 'goquoting', RUTA_PLUGIN_BOOKING . 'app/js/goquoting.js', array ( 'jquery' ), '', true );
+wp_enqueue_script ( 'goquoting', RUTA_PLUGIN_BOOKING . 'public/js/goquoting.js', array ( 'jquery' ), '', true );
 
 }
 add_action('wp_enqueue_scripts','goquotingjs_init');
