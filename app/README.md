@@ -1,1 +1,2 @@
-Place your app source files here.
+# Brunch Plugin Base WP
+ 

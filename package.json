@@ -2,7 +2,7 @@
   "name": "plugin-base-wordpress",
   "private": true,
   "version": "1.0.0",
-  "repository": "https://github.com/cattanich/tema-base-wordpress.git",
+  "repository": "https://github.com/cattanich/Brunch-Plugin-Base-WP.git",
   "author": "Christian <cattanich@digicatt.com.ec>",
   "license": "MIT",
   "scripts": {
@@ -10,17 +10,11 @@
     "build": "brunch build --production "
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.1",
     "animate.css": "^3.7.0",
     "aos": "^2.3.4",
-    "bootstrap": "^4.3.1",
-    "hover.css": "^2.3.2",
-    "jquery": "^3.3.1",
-    "jquery-scrollify": "^1.0.19",
-    "jssocials": "https://github.com/cattanich/jssocials",
-    "popper.js": "^1.14.7",
-    "preloader-js": "^1.0.1",
-    "slick-carousel": "^1.8.1"
+    "bootstrap-datepicker": "^1.8.0",
+    "bootstrap-input-spinner": "^1.12.7",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "assetsmanager-brunch": "^1.8.1",
