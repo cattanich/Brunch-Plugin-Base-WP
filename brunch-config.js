@@ -21,8 +21,8 @@ module.exports = {
             joinTo: {
                 // "styles/sitio.css": /^app/,
                 // "styles/vendor.css": /^(?!app)/
-                "public/styles/goquoting.css": /plugin.scss/,
-                "admin/styles/goquoting-admin.css": /plugin-admin.scss/
+                "public/styles/goquoting.css": /plugin.scss/
+                // "admin/styles/goquoting-admin.css": /plugin-admin.scss/
             }
         },
     },
