@@ -1,0 +1,33 @@
+@import "bootstrap/theme.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// bower:scss
+
+// endbower
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,800');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Trirong:400,700');
+
+.secondfont {
+
+    font-family: "Trirong";
+
+}
+
+.titulos {
+
+    font-family: "Trirong";
+    font-weight: bold;
+
+}
+
+/*No decoration links*/
+a:hover {
+      text-decoration:none;
+   }
+
+a {
+    text-decoration: none;
+}
