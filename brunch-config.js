@@ -12,8 +12,9 @@ module.exports = {
     files: {
         javascripts: {
             joinTo: {
-                'scripts/goquoting.js': /^app/,
-                'scripts/vendorq.js': /^node_modules/
+                'public/scripts/goquoting.js': /^app/,
+                'admin/scripts/goquoting-admin.js': /goquoting-admin.js/
+                // 'scripts/vendorq.js': /^node_modules/
             }
         },
         stylesheets: {
