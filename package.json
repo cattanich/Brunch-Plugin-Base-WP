@@ -13,8 +13,7 @@
     "animate.css": "^3.7.0",
     "aos": "^2.3.4",
     "bootstrap-datepicker": "^1.8.0",
-    "bootstrap-input-spinner": "^1.12.7",
-    "jquery": "^3.3.1"
+    "bootstrap-input-spinner": "^1.12.7"
   },
   "devDependencies": {
     "assetsmanager-brunch": "^1.8.1",
