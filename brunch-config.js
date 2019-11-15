@@ -12,23 +12,23 @@ module.exports = {
     files: {
         javascripts: {
             joinTo: {
-                'scripts/sitio.js': /^app/,
-                'scripts/vendor.js': /^node_modules/
+                'scripts/goquoting.js': /^app/,
+                'scripts/vendorq.js': /^node_modules/
             }
         },
         stylesheets: {
             joinTo: {
                 // "styles/sitio.css": /^app/,
                 // "styles/vendor.css": /^(?!app)/
-                "styles/sitio.css": /sitio.scss/,
-                "styles/vendor.css": /vendor.scss/
+                "styles/goquoting.css": /sitio.scss/,
+                "styles/vendorq.css": /vendor.scss/
             }
         },
     },
     modules: {
         autoRequire: {
             // outputFileName : [ entryModule ]
-            'scripts/sitio.js': ['initialize']
+            'scripts/goquoting.js': ['initialize']
         }
     },
     plugins: {
@@ -39,11 +39,10 @@ module.exports = {
             processors: require('autoprefixer')(['last 8 versions'])
         },
         browserSync: {
-            // proxy: "http://localhost/wpnewparcel/",
-            server: false,
-            proxy: "http://localhost/itin",
             // logLevel: "debug",
-            port: 9000
+            server: false,
+            proxy: "http://localhost/test",
+            port: 8888
         },
         cleancss: {
             specialComments: 0,
@@ -54,8 +53,10 @@ module.exports = {
         // },
         assetsmanager: {
             copyTo: {
-                'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
-                'images': ['node_modules/preloader-js/assets/images/*']
+                // 'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
+                // 'styles/fonts': ['node_modules/@mdi/font/fonts/*'],
+                // 'images': ['node_modules/preloader-js/assets/images/*'],
+                // 'scripts/vendor': ['node_modules/jquery/dist/jquery.js']
             }
         }
     }
