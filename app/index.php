@@ -35,13 +35,12 @@ require_once('admin/goquoting-setup.php');
 require_once('admin/admin-functions.php');
 require_once('public/booking-system-create-pages.php');
 require_once('public/booking-system-shortcodes.php');
-// require_once('app/booking-system-frontend.php');
 
 
 // CcM Edit / carga de js 
 function goquotingjs_init() {
 
-wp_enqueue_script ( 'goquoting', RUTA_PLUGIN_BOOKING . 'public/js/goquoting.js', array ( 'jquery' ), '', true );
+wp_enqueue_script ( 'goquoting', RUTA_PLUGIN_BOOKING . 'public/scripts/goquoting.js', array ( 'jquery' ), '', true );
 
 }
 add_action('wp_enqueue_scripts','goquotingjs_init');
